@@ -22,7 +22,7 @@ class Character:
     def set_age(self, age):
         self.age = age
 
-    def walk(self):
+    def walk(self, x, y):
         pass
 
     def eat(self):
