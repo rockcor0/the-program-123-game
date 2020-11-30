@@ -1,5 +1,7 @@
 class Bag:
 
+    SLOTS = 8
+
     def __new__(cls):
         pass
 

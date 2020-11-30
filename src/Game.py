@@ -1,4 +1,8 @@
+from src.Player import Player
+
+
 class Game:
+    #player = Player('Ricardo', 'a@b.com', 37)
 
     def __new__(cls):
         pass
