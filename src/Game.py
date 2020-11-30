@@ -1,4 +1,5 @@
 class Game:
+
     def __new__(cls):
         pass
 
