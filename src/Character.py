@@ -10,6 +10,9 @@ class Character:
         self.age = 0
         print('self')
 
+    def __del__(self):
+        pass
+
     def set_name(self, name):
         self.name = name
 
