@@ -1,7 +1,5 @@
 from random import randint
 
-from src.Statistic import Statistic
-
 
 # An item is an object in the floor
 # Character can get this object and put in the bag or consume

@@ -1,6 +1,3 @@
-from src.Cell import Cell
-
-
 class Stage:
 
     def __new__(cls, *args, **kwargs):
