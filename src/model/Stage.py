@@ -12,19 +12,18 @@ class Stage:
         print("Initialize stage - init")
         rows = 20
         cols = 20
-        self.z_coord_default = 10
 
         # New game or load and saved game
         if new_game:
-            self.matriz = self.create_matrix(rows, cols)
-            self.fill_matrix(self.matriz, rows, cols)
+            self.matrix = self.create_matrix(rows, cols)
+            self.fill_matrix(self.matrix, rows, cols)
 
         else:
             # TODO Do something
             print("Get matrix from data base of saved game")
 
     def get_matrix(self):
-        return self.matriz
+        return self.matrix
 
     @staticmethod
     def create_cell(x_coord, y_coord, z_coord):
@@ -38,7 +37,7 @@ class Stage:
     def fill_matrix(self, matrix, rows, cells):
         for i in range(rows):
             for j in range(cells):
-                matrix[i][j] = self.create_cell(i, j, self.z_coord_default)
+                matrix[i][j] = self.create_cell(i, j, 10)
 
     def __del__(self):
         print("Destroy stage")
