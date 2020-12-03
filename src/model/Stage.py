@@ -12,36 +12,38 @@ class Stage:
         print("Initialize stage - init")
         rows = 20
         cols = 20
+        self.z_coord_default = 10
 
         # New game or load and saved game
         if new_game:
-            self.matriz = self.create_matriz(rows, cols)
-            self.fill_matriz(self.matriz, rows, cols)
+            self.matriz = self.create_matrix(rows, cols)
+            self.fill_matrix(self.matriz, rows, cols)
 
-        print(self.matriz)
+        else:
+            # TODO Do something
+            print("Get matrix from data base of saved game")
 
-    def get_matriz(self):
+    def get_matrix(self):
         return self.matriz
-
-    def __del__(self):
-        print("Destroy stage")
 
     @staticmethod
     def create_cell(x_coord, y_coord, z_coord):
         return Cell(x_coord, y_coord, z_coord)
 
     @staticmethod
-    def create_matriz(rows, cells):
-        temp_matriz = Matriz(rows, cells)
-        return temp_matriz.create_matriz()
+    def create_matrix(rows, cells):
+        temp_matrix = Matriz(rows, cells)
+        return temp_matrix.create_matriz()
 
-    def fill_matriz(self, matriz, rows, cells):
+    def fill_matrix(self, matrix, rows, cells):
         for i in range(rows):
             for j in range(cells):
-                #print(self.matriz[i][j])
-                matriz[i][j] = self.create_cell(i, j, 0)
+                matrix[i][j] = self.create_cell(i, j, self.z_coord_default)
+
+    def __del__(self):
+        print("Destroy stage")
 
 
 # For testing
 s = Stage(True)
-print(s.get_matriz())
+print(s.get_matrix())

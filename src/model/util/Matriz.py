@@ -16,7 +16,7 @@ class Matriz:
         for i in range(self.rows):
             matriz_col = []
             for j in range(self.cols):
-                # Fill the matriz with 0's
+                # Fill the matrix with 0's
                 matriz_col.append(0)
             matriz.append(matriz_col)
 
