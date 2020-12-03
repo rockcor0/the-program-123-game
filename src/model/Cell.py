@@ -16,10 +16,7 @@ class Cell:
 
     @staticmethod
     def create_random_item():
-        item = Item()
-        print(item.get_name())
-        print(item.get_feature())
-        return item
+        return Item()
 
 
 #Sample for testing
