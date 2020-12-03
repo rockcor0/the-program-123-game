@@ -10,6 +10,7 @@ class Cell:
         self.y_coord = y_coord
         self.z_coord = z_coord
 
+
 #Sample for testing
 cell = Cell(1,1,10)
 print(cell.z_coord)
