@@ -18,7 +18,6 @@ class Cell:
     def create_random_item():
         return Item()
 
-
 #Sample for testing
 cell = Cell(1,1,10)
 print(cell._z_coord)
