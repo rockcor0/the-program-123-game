@@ -4,11 +4,14 @@ class Character:
         print('New')
         return super(Character, cls).__new__(cls)
 
-    def __init__(self):
-        self.name = ''
-        self.sex = ''
-        self.age = 0
-        print('self')
+    def __init__(self, sex):
+        self.sex = sex;
+        if sex == 'H':
+            self.name = 'Fer'
+            self.age = 29
+        else:
+            self.name = 'Victoria'
+            self.age = 27
 
     def __del__(self):
         pass

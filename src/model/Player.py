@@ -15,6 +15,7 @@ class Player:
         pass
 
     def create_new_character(self):
+
         pass
 
     def __del__(self):
