@@ -1,14 +1,15 @@
 class Bag:
 
-    SLOTS = 8
-
     def __new__(cls):
-        pass
+        return super(Bag, cls).__new__(cls)
 
     def __init__(self):
-        pass
+        self.slots = 8
 
     def __del__(self):
+        pass
+
+    def create_matrix(self):
         pass
 
     def save_item(self):
