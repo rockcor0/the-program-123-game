@@ -8,7 +8,14 @@ class Player:
         self.name = name
         self.email = email
         self.age = age
+        self.character
         print('Init Player')
+
+    def load_characters(self):
+        pass
+
+    def create_new_character(self):
+        pass
 
     def __del__(self):
         pass
