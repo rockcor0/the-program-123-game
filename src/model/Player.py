@@ -1,3 +1,6 @@
+from src.model.Character import Character
+
+
 class Player:
 
     def __new__(cls, *args, **kwargs):
@@ -14,9 +17,9 @@ class Player:
     def load_characters(self):
         pass
 
-    def create_new_character(self):
-
-        pass
+    def create_new_character(self, sex):
+        character = Character()
+        character.live(sex)
 
     def __del__(self):
         pass
