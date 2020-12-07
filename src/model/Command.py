@@ -21,3 +21,21 @@ class Command:
     # TODO character move to the left
     def move_left(self):
         pass
+
+    # TODO character move to the right side
+    def move_right(self):
+        pass
+
+    # TODO character jump
+    def jump(self):
+        pass
+
+    # TODO character take an object
+    def take_an_object_from_floor(self):
+        pass
+
+    # TODO character take an object from bag
+    def take_an_object_from_bag(self):
+        pass
+
+    
