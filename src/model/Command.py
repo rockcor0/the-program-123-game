@@ -38,4 +38,6 @@ class Command:
     def take_an_object_from_bag(self):
         pass
 
-    
+    # TODO character uses an object in the bag
+    def use_an_object_from_bag(self):
+        pass
