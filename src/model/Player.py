@@ -7,7 +7,8 @@ class Player:
         print("New Player")
         return super(Player, cls).__new__(cls)
 
-    def __init__(self, name, email, age):
+    def __init__(self, player_id, name, email, age):
+        self.player_id = player_id
         self.name = name
         self.email = email
         self.age = age
@@ -15,6 +16,7 @@ class Player:
         print('Init Player')
 
     def load_characters(self):
+        # TODO need to look for character in database
         pass
 
     def create_new_character(self, sex):
@@ -22,6 +24,7 @@ class Player:
         character.live(sex)
 
     def __del__(self):
+        # TODO
         pass
 
 
