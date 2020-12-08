@@ -2,10 +2,10 @@
 class Command:
 
     def __new__(cls, *args, **kwargs):
-        pass
+        return super(Command, cls).__new__(cls)
 
     def __init__(self):
-        pass
+        print('Created Command')
 
     def __del__(self):
         pass

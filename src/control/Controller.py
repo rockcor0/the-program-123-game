@@ -9,3 +9,6 @@ class Controller:
     def validate_command(self, command):
         # Search in local data base for command
         pass
+
+    def get_commands(self):
+        pass
