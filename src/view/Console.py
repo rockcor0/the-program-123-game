@@ -16,6 +16,10 @@ class Console:
             print(command)
             self.write_command()
 
+    def check_command(self, command):
+        # Check if command is valid
+        pass
+
     @staticmethod
     def exit_from_console(command):
         if command == 'exit':
