@@ -1,10 +1,16 @@
-class Console:
+from src.control.ViewController import ViewController
+
+
+class Console(ViewController):
 
     def __new__(cls, *args, **kwargs):
         return super(Console, cls).__new__(cls)
 
     def __init__(self):
         print('Hello, init the console')
+
+    def __del__(self):
+        print('Destructor console')
 
     def write_command(self):
         command = input('Please write something: ')
@@ -13,12 +19,15 @@ class Console:
             print('Bye')
 
         else:
-            print(command)
+            if self.is_valid_command(command):
+                print(super().do_something('Character', command))
+            else:
+                print('Que vergüenza, estoy algo confundido')
             self.write_command()
 
-    def check_command(self, command):
+    def is_valid_command(self, command):
         # Check if command is valid
-        pass
+        return super().validate_command(command)
 
     @staticmethod
     def exit_from_console(command):
