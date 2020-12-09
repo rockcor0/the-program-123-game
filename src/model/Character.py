@@ -5,7 +5,8 @@ class Character:
         return super(Character, cls).__new__(cls)
 
     def __init__(self):
-        self.statictics
+        # self.statictics = 0
+        print('Init Character')
 
     def live(self, sex):
         if sex == 'H':
@@ -20,6 +21,9 @@ class Character:
 
     def __del__(self):
         pass
+
+    def get_name(self):
+        return self.name
 
     def set_name(self, name):
         self.name = name

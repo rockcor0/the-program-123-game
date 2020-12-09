@@ -7,6 +7,7 @@ class Console(ViewController):
         return super(Console, cls).__new__(cls)
 
     def __init__(self):
+        # self.commands = super().get_commands()
         print('Hello, init the console')
 
     def __del__(self):
@@ -20,7 +21,7 @@ class Console(ViewController):
 
         else:
             if self.is_valid_command(command):
-                print(super().do_something('Character', command))
+                print(super().do_something(0, command))
             else:
                 print('Que vergüenza, estoy algo confundido')
             self.write_command()

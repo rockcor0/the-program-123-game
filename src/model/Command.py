@@ -12,7 +12,7 @@ class Command:
 
     # TODO character move foward
     def move_forward(self):
-        return "Este lugar es algo extraño"
+        return 'Este lugar es algo extraño'
 
     # TODO character move back
     def move_back(self):
@@ -26,13 +26,21 @@ class Command:
     def move_right(self):
         return "La mano cagada"
 
+    # TODO character runs
+    def run(self):
+        return 'Prefiero que digan que aquí corrió un cobarde en vez de aquí murió un valiente'
+
+    # TODO character do nothing
+    def do_nothing(self):
+        return 'No hay afán. Mejor será descansar un poco.'
+
     # TODO character jump
     def jump(self):
-        return "Allá vou"
+        return 'Allá voy'
 
     # TODO character take an object
     def take_an_object_from_floor(self):
-        return "¿Será hoy mi día de suerte?"
+        return '¿Será hoy mi día de suerte?'
 
     # TODO character take an object from bag
     def take_an_object_from_bag(self):
@@ -41,3 +49,7 @@ class Command:
     # TODO character uses an object in the bag
     def use_an_object_from_bag(self):
         pass
+
+    # TODO character say hello
+    def say_hello(self):
+        return 'Hola. Este lugar es extraño ¿Puedes decirme cóm...? ¿A dónde se fue?'
