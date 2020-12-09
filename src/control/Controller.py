@@ -27,9 +27,10 @@ class Controller(App):
 
     def validate_command(self, command):
         # Search in local data base for command
-
         found = False
-        for i in self.commands:
+        the_commands = self.commands
+
+        for i in the_commands:
             if i[0] == command.lower() or i[1] == command.lower():
                 found = True
                 break
