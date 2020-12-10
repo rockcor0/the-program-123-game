@@ -10,14 +10,14 @@ class Controller(App):
         return super(Controller, cls).__new__(cls)
 
     def __init__(self):
-
+        super(Controller, self).__init__()
         # Temp Command list. Get it from DB
         self.__commands = [('caminar', 'walk', 1),
                          ('correr', 'run', 2),
                          ('saltar', 'jump', 3),
                          ('saludar', 'hello', 4),
-                         ('', '', 5),
-                         ('', '', 6),
+                         ('comer', 'eat', 5),
+                         ('dormir', 'sleep', 6),
                          ('', '', 7)
                          ]
 

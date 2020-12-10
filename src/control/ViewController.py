@@ -7,5 +7,6 @@ class ViewController(Controller):
         return super(ViewController, cls).__new__(cls)
 
     def __init__(self):
+        super(ViewController, self).__init__()
         print('Init view controller')
 

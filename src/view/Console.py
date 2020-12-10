@@ -2,7 +2,7 @@ from src.control.Controller import Controller
 from src.control.ViewController import ViewController
 
 
-class Console(Controller):
+class Console(ViewController):
 
     def __new__(cls, *args, **kwargs):
         return super(Console, cls).__new__(cls)
