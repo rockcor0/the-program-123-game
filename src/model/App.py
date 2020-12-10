@@ -20,7 +20,7 @@ class App:
         command = Command()
         char = user
         if user == '0':
-            char == Character().name
+            char == 'Victoria'
         if command_num == 1:
             Message(char, command.move_forward())
         elif command_num == 2:

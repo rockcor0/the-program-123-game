@@ -18,7 +18,7 @@ class Message:
 
     @staticmethod
     def say_message(who, say):
-        message = who + ': ' + say
+        message = str(who) + ': ' + say
         print(message)
 
 

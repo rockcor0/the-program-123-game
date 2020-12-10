@@ -1,14 +1,15 @@
+from src.control.Controller import Controller
 from src.control.ViewController import ViewController
 
 
-class Console(ViewController):
+class Console(Controller):
 
     def __new__(cls, *args, **kwargs):
         return super(Console, cls).__new__(cls)
 
     def __init__(self):
-        # self.commands = super().get_commands()
-        print('Hello, init the console')
+        print('Init the console')
+        super(Console, self).__init__()
 
     def __del__(self):
         print('Destructor console')
