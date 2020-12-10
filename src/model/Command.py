@@ -50,6 +50,6 @@ class Command:
     def use_an_object_from_bag(self):
         pass
 
-    # TODO character say hello
+    # TODO character _say hello
     def say_hello(self):
         return 'Hola. Este lugar es extraño ¿Puedes decirme cóm...? ¿A dónde se fue?'
