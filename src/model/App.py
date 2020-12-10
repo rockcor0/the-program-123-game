@@ -15,7 +15,7 @@ class App:
     def __del__(self):
         print('Destroy App')
 
-    def do_something(self, user, command_num):
+    def play(self, user, command_num):
         # Temp, require obtain parameters
         command = Command()
         char = user

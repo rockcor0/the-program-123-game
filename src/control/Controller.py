@@ -44,9 +44,9 @@ class Controller(App):
 
         for item in self.commands:
             if item[0] == command.lower or item[1] == command.lower:
-                return super().do_something(user, item[2])
+                return super().play(user, item[2])
 
-        return Message(command)
+        return 'Nothing'
 
     def get_commands(self):
         return self.commands
