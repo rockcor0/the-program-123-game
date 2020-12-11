@@ -32,7 +32,7 @@ class Command:
 
     # TODO character do nothing
     def do_nothing(self):
-        return 'Creo que había algo para esto, pero no puedo recordarlo. Será mejor dejarlo pasar.'
+        return 'Creo que había algo para esto, pero no puedo recordarlo. Será mejor intentarlo en otra ocasióneat.'
 
     # TODO character jump
     def jump(self):

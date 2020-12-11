@@ -1,12 +1,12 @@
 class Character:
 
     def __new__(cls):
-        print('New')
+        print('System: New Character')
         return super(Character, cls).__new__(cls)
 
     def __init__(self):
         # self.statictics = 0
-        print('Init Character')
+        print('System: Init Character')
 
     def live(self, sex):
         if sex == 'H':
@@ -51,4 +51,4 @@ c = Character()
 c.set_name('Ricardo')
 c.set_age(37)
 c.set_sex('Hombre')
-print(c.age)
+# print(c.age)

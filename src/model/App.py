@@ -10,16 +10,16 @@ class App:
         return super(App, cls).__new__(cls)
 
     def __init__(self):
-        print('Init App')
+        print('System: Init App')
 
     def __del__(self):
-        print('Destroy App')
+        print('System: Destroy App')
 
     def play(self, user, command_num):
         # Temp, require obtain parameters
         command = Command()
         char = user
-        if user == '0':
+        if user == 'Me':
             char == 'Victoria'
         if command_num == 1:
             Message(char, command.move_forward())

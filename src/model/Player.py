@@ -4,7 +4,7 @@ from src.model.Character import Character
 class Player:
 
     def __new__(cls, *args, **kwargs):
-        print("New Player")
+        print("System: New Player")
         return super(Player, cls).__new__(cls)
 
     def __init__(self, player_id, name, email, age):
@@ -13,7 +13,7 @@ class Player:
         self.email = email
         self.age = age
         self.character
-        print('Init Player')
+        print('System: Init Player')
 
     def load_characters(self):
         # TODO need to look for character in database
@@ -30,4 +30,4 @@ class Player:
 
 #TODO Only for testing
 jugador = Player('Ricardo', 'a@b.com', 37)
-print(jugador.name)
+print('System: ' + jugador.name)

@@ -21,9 +21,9 @@ class Controller(App):
                          ('', '', 7)
                          ]
 
-        self.users = ['0', 'System', 'Scenary']
+        self.users = ['Me', 'System', 'Scenary']
 
-        print('Init de controller')
+        # print('Init de controller')
 
     def validate_command(self, command):
         # Search in local data base for command
@@ -42,7 +42,7 @@ class Controller(App):
 
     def do_something(self, user, command):
         for item in self.__commands:
-            print(command.lower())
+            # print(command.lower())
             if item[0] == command.lower() or item[1] == command.lower():
                 return super().play(user, item[2])
             else:

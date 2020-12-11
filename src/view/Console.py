@@ -8,23 +8,23 @@ class Console(ViewController):
         return super(Console, cls).__new__(cls)
 
     def __init__(self):
-        print('Init the console')
+        print('System: Init the console')
         super(Console, self).__init__()
 
     def __del__(self):
-        print('Destructor console')
+        print('System: Destructor console')
 
     def write_command(self):
-        command = input('Please write something: ')
+        command = input('>> Please write something: ')
 
         if self.exit_from_console(command):
-            print('Bye')
+            print('System: Bye')
 
         else:
             if self.is_valid_command(command):
                 print(super().do_something(0, command))
             else:
-                print('Que vergüenza, estoy algo confundido')
+                print('Me: Que vergüenza, estoy algo confundido')
             self.write_command()
 
     def is_valid_command(self, command):

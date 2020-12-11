@@ -5,11 +5,11 @@ from src.model.util.Matriz import Matriz
 class Stage:
 
     def __new__(cls, *args, **kwargs):
-        print("Create stage - new")
+        print("System: Create stage - new")
         return super(Stage, cls).__new__(cls)
 
     def __init__(self, new_game):
-        print("Initialize stage - init")
+        print("System: Initialize stage - init")
         rows = 20
         cols = 20
 
@@ -20,7 +20,7 @@ class Stage:
 
         else:
             # TODO Do something
-            print("Get matrix from data base of saved game")
+            print("System: Get matrix from data base of saved game")
 
     def get_matrix(self):
         return self.matrix
@@ -40,7 +40,7 @@ class Stage:
                 matrix[i][j] = self.create_cell(i, j, 10)
 
     def __del__(self):
-        print("Destroy stage")
+        print("System: Destroy stage")
 
 
 # For testing

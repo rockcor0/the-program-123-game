@@ -6,11 +6,11 @@ class Message:
     def __init__(self, who, say):
         self._who = who
         self._say = say
-        print('Init Message')
+        # print('Init Message')
         self.say_message(self._who, self._say)
 
     def __del__(self):
-        print('Destroy Message')
+        print('System: Destroy Message')
 
     @staticmethod
     def say_message(who, say):

@@ -8,5 +8,5 @@ class ViewController(Controller):
 
     def __init__(self):
         super(ViewController, self).__init__()
-        print('Init view controller')
+        print('System: Init view controller')
 
