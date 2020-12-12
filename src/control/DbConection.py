@@ -6,5 +6,5 @@ data = {
   'name':'Ricardo Delgado',
   'email':'ridel007@gmail.com'
 }
-result = firebase.post('/the-program-123-game/test', data)
+result = firebase.post('/users-test', data)
 print(result)
