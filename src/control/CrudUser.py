@@ -16,6 +16,9 @@ def create_player(name, email, age):
     return firebase.post(user_uri, data)
 
 def read_player(player_id):
-    pass
+    result = firebase.get(user_uri, '')
+    print(result)
+    return result
 
-create_player('Test', 'Test', 20)
+create_player('Ricardo Delgado', 'ridel007@gmail.com', 37)
+read_player(' ')
