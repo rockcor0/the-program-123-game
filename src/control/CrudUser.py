@@ -23,12 +23,21 @@ def read_player(player_id):
     return result
 
 
-def update_player(player_id):
-    pass
+def update_player(player_id, name, email, age):
+    data = {
+        'name': name,
+        'email': email,
+        'age': age
+    }
+    result = firebase.put(user_uri+'/'+player_id, data)
+    print(result)
+    return result
 
 
 def delete_player(player_id):
     pass
 
-create_player('Ricardo Delgado', 'ridel007@gmail.com', 37)
+
+# create_player('Ricardo Delgado', 'ridel007@gmail.com', 37)
 read_player(' ')
+update_player('-MOJ_fJScoQsBBHFdYnW', 'Lilly', 'lipadugi', 32)
