@@ -29,7 +29,7 @@ def update_player(player_id, name, email, age):
         'email': email,
         'age': age
     }
-    result = firebase.put(user_uri+'/'+player_id, data)
+    result = firebase.put(user_uri+'/'+player_id, 'name', name)
     print(result)
     return result
 
