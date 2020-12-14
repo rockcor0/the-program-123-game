@@ -4,6 +4,7 @@ firebase = firebase.FirebaseApplication('https://the-program-123-game.firebaseio
 uri_player = '/users-test'
 uri_character = '/character'
 uri_game = '/game'
+uri_bag = '/bag'
 
 data = {'123': {
   'username':'rockcor',
