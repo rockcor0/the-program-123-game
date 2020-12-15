@@ -11,5 +11,6 @@ data = {'123': {
   'name':'Ricardo Delgado',
   'email':'ridel007@gmail.com'
 }}
+
 result = firebase.post('/users-test', data)
 print(result)

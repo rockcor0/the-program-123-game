@@ -22,6 +22,9 @@ def read_player(player_id):
     print(result)
     return result
 
+def get_a_player():
+    pass
+
 # Update de player
 def update_player(player_id, name, email, age):
     data = {
