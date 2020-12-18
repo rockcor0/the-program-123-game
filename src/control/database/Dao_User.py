@@ -22,7 +22,7 @@ def read_player(player_id):
     print(result)
     return result
 
-# Get
+# Get a player
 def get_a_player():
     pass
 
