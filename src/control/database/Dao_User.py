@@ -24,6 +24,8 @@ def read_player(player_id):
 
 # Get a player
 def get_a_player():
+    result = 0
+    return result
     pass
 
 # Update de player
