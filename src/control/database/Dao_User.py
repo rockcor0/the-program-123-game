@@ -24,9 +24,8 @@ def read_player(player_id):
 
 # Get a player
 def get_a_player():
-    result = 0
+    result = firebase.get(user_uri, '')
     return result
-    pass
 
 # Update de player
 def update_player(player_id, name, email, age):
