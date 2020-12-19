@@ -22,7 +22,7 @@ def read_player(player_id):
     print(result)
     return result
 
-# Get a player
+# Get a player from db
 def get_a_player():
     result = firebase.get(user_uri, '')
     return result
