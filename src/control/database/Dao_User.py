@@ -10,7 +10,7 @@ def create_player(name, email, age):
     data = {
         'name': name,
         'email': email,
-        'age': age
+        'age': age 
     }
 
     return firebase.post(user_uri, data)
