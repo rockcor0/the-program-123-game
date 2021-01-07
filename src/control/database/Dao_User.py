@@ -5,10 +5,10 @@ from src.control import DbConection
 firebase = DbConection.firebase
 user_uri = DbConection.uri_player
 
-# Create the player in the database
+# Create the player in the database 
 def create_player(name, email, age):
     data = {
-        'name': name, 
+        'name': name,
         'email': email,
         'age': age 
     }
