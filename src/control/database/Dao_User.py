@@ -5,15 +5,17 @@ from src.control import DbConection
 firebase = DbConection.firebase
 user_uri = DbConection.uri_player
 
+
 # Create the player in the database
 def create_player(name, email, age):
     data = {
         'name': name,
         'email': email,
-        'age': age 
+        'age': age
     }
 
     return firebase.post(user_uri, data)
+
 
 # Read de player from database
 def read_player(player_id):
@@ -22,10 +24,12 @@ def read_player(player_id):
     print(result)
     return result
 
+
 # Get a player from db
 def get_a_player():
     result = firebase.get(user_uri, '')
     return result
+
 
 # Update de player
 def update_player(player_id, name, email, age):
@@ -38,6 +42,7 @@ def update_player(player_id, name, email, age):
     result = firebase.put(user_uri, player_id, data)
     print(result)
     return result
+
 
 # Delete the player
 def delete_player(player_id):
