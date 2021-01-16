@@ -5,6 +5,7 @@ from src.control import DbConection
 firebase = DbConection.firebase
 user_uri = DbConection.uri_player
 
+#Está un poco quedaado el proyecto
 
 # Create the player in the database
 def create_player(name, email, age):
