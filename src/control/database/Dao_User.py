@@ -6,7 +6,7 @@ firebase = DbConection.firebase
 user_uri = DbConection.uri_player
 
 #Está un poco quedaado el proyecto
-#Continuar con el proceso
+#Continuar con el proceso 
 # Create the player in the database
 def create_player(name, email, age):
     data = {
